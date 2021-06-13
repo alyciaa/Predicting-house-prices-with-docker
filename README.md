@@ -5,7 +5,7 @@ that the user would have entered beforehand.
 So the algorithm is able to predict these prices based on the following attributes entered at
 GUI level:
 
-• bedrooms: represents the number of bedrooms.
+• bedrooms: represents the number of bedrooms. <br />
 • bathrooms: number of bathrooms.
 • sqft_living: area of the house.
 • sqft_lot: area of the land.
