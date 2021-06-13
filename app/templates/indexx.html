@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Predicting Home Pricing by its attributes</h1>
+
+
+
+<form method="POST" action="{{ url_for('.predict')}}" style="background-color:#CCCCCC">
+    <pre>
+    bedrooms <input name="bedrooms"  type=number  required /><br>
+    bethrooms  <input name="bethrooms" type=number   required/><br>
+    sqft_living <input name="sqft_living" type=number  required/><br>
+    sqft_lot  <input name="sqft_lot" type=number   required/><br>
+    floors  <input name="floors" type=number   required/><br>
+    water_front  <input name="water_front" type=number   required/><br>
+    view  <input name="view" type=number   required/><br>
+    zip_code  <input name="zip_codeh" type=number   required/><br>
+    <button type="submit" class="btn">Predict</button>
+    </pre>
+</form >
+
+<br>
+	 <br>
+	 {{ prediction_text}}
+
+</body>
+</html>
+

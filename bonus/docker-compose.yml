@@ -1,0 +1,30 @@
+version: "3.2" 
+       
+services:
+  #container_name: user_interface 
+  
+  model:
+    #container_name: model  
+   
+    build: ./model/.
+    volumes:  
+       - ./model:/app
+    stdin_open: true
+    tty: true
+  web:
+     build: ./app/.
+     
+     volumes:  
+       - ./app:/app
+   
+     ports:
+      - "5000:5000"
+
+     
+     
+
+     
+    
+    
+         
+    

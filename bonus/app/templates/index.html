@@ -1,0 +1,23 @@
+<div class="login">
+	<h1>Predict of House prices</h1>
+	 <h3> Enter the following values to predict the house prices</h3>
+
+	 <form action="{{ url_for('predict')}}"method="post">
+	 	 <input type="text" name="bedrooms" placeholder="bedrooms" required="required" />
+	 	 <input type="text" name="bathrooms" placeholder="bathrooms" required="required" />
+	 	 <input type="text" name="sqft_living" placeholder="sqft_living" required="required" />
+	 	 <input type="text" name="sqft_lot" placeholder="sqft_lot" required="required" />
+	 	 <input type="text" name="floors" placeholder="floors" required="required" />
+	 	 <input type="text" name="waterfront" placeholder="waterfront" required="required" />
+	 	 <input type="text" name="view" placeholder="view" required="required" />
+	 	 <input type="text" name="zipcode" placeholder="zipcode" required="required" />
+
+	 	 <button type="submit" class="btn">Predict</button>
+
+	 </form>
+
+	 <br>
+	 <br>
+	 {{ prediction_text}}
+
+</div>

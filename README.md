@@ -3,7 +3,7 @@
 The objective of my application is to predict the price of a house according to certain characteristics
 that the user would have entered beforehand. <br />
 So the algorithm is able to predict these prices based on the following attributes entered at
-GUI level: <br />
+GUI level : <br />
 
 • bedrooms: represents the number of bedrooms. <br />
 • bathrooms: number of bathrooms. <br />
